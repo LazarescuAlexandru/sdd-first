@@ -1,50 +1,41 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: template → 1.0.0
+- List of modified principles: All principles added (Security by Design, Test-First Development, Maintainable Architecture, Code Quality Standards, Performance and Simplicity)
+- Added sections: Technology Stack Requirements, Development Workflow
+- Removed sections: None
+- Templates requiring updates: None
+- Follow-up TODOs: None
+-->
+# RSS Feed Reader Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Security by Design
+All code must implement secure practices: validate all inputs to prevent injection attacks, use parameterized queries or ORM protections, implement proper authentication and authorization for future extensions, sanitize outputs to prevent XSS, and follow OWASP guidelines for web applications.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Test-First Development
+Write unit tests before implementing features using TDD principles; achieve at least 80% code coverage for new code; include integration tests for API endpoints; ensure automated testing runs in CI/CD pipeline with quality gates.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Maintainable Architecture
+Use clean architecture with clear separation of concerns between API backend and WebAssembly frontend; implement dependency injection throughout the application; design modular components allowing easy extension for Extended-MVP features like feed fetching and persistence.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Code Quality Standards
+Follow C# coding standards and Microsoft's guidelines; use async/await patterns properly for asynchronous operations; implement comprehensive error handling with appropriate HTTP status codes; conduct regular code reviews; integrate static analysis tools like Roslyn analyzers.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Performance and Simplicity
+Optimize for performance in data handling, API responses, and UI rendering; keep MVP implementation simple following YAGNI principles; measure and monitor key performance metrics; avoid premature optimization while ensuring responsive user experience.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Technology Stack Requirements
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+The project must use ASP.NET Core Web API for the backend and Blazor WebAssembly for the frontend, following Microsoft's best practices for cross-platform development. All dependencies must be from official NuGet packages with stable versions. The architecture must support incremental complexity from MVP to Extended-MVP features.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Use Git for version control with feature branches; implement CI/CD pipeline with automated builds, tests, and deployments; require code reviews for all pull requests; document all changes and architectural decisions; follow semantic versioning for releases.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices and guides all project decisions. Amendments require consensus among stakeholders, proper documentation, and a migration plan for existing code. Compliance with principles must be verified during code reviews and automated checks. All PRs must demonstrate adherence to security, maintainability, and code quality standards.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-03-19 | **Last Amended**: 2026-03-19
