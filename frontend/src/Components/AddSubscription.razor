@@ -1,0 +1,18 @@
+@inject SubscriptionService Service
+@using src.Services
+
+<input @bind="url" placeholder="Enter RSS feed URL" />
+<button @onclick="OnAddSubscription">Add Subscription</button>
+
+@code {
+    private string url = string.Empty;
+
+    private async Task OnAddSubscription()
+    {
+        if (!string.IsNullOrWhiteSpace(url))
+        {
+            await Service.AddSubscriptionAsync(url);
+            url = string.Empty;
+        }
+    }
+}

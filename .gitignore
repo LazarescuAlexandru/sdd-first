@@ -1,0 +1,33 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+packages/
+.vs/
+*.log
+.env*
+
+# ASP.NET Core
+wwwroot/
+
+# Blazor WebAssembly
+wwwroot/css/
+wwwroot/js/
+
+# Build outputs
+*.dll
+*.exe
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log

@@ -43,10 +43,10 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create backend ASP.NET Core Web API project in backend/src/
-- [ ] T002 Create frontend Blazor WebAssembly project in frontend/src/
-- [ ] T003 [P] Configure CORS in backend for Blazor WASM development
-- [ ] T004 [P] Add Swagger/OpenAPI documentation to backend API
+- [X] T001 Create backend ASP.NET Core Web API project in backend/src/
+- [X] T002 Create frontend Blazor WebAssembly project in frontend/src/
+- [X] T003 [P] Configure CORS in backend for Blazor WASM development
+- [X] T004 [P] Add Swagger/OpenAPI documentation to backend API
 
 ---
 
@@ -56,10 +56,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Create Subscription model in backend/src/Models/Subscription.cs
-- [ ] T006 Create ISubscriptionService interface in backend/src/Services/ISubscriptionService.cs
-- [ ] T007 Implement SubscriptionService with in-memory storage in backend/src/Services/SubscriptionService.cs
-- [ ] T008 Register services in backend Program.cs with dependency injection
+- [X] T005 Create Subscription model in backend/src/Models/Subscription.cs
+- [X] T006 Create ISubscriptionService interface in backend/src/Services/ISubscriptionService.cs
+- [X] T007 Implement SubscriptionService with in-memory storage in backend/src/Services/SubscriptionService.cs
+- [X] T008 Register services in backend Program.cs with dependency injection
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -73,10 +73,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T009 Create SubscriptionsController in backend/src/Controllers/SubscriptionsController.cs with POST endpoint
-- [ ] T010 [P] Create SubscriptionService in frontend/src/Services/SubscriptionService.cs for API calls
-- [ ] T011 [P] Create AddSubscription component in frontend/src/Components/AddSubscription.razor
-- [ ] T012 Update Index page in frontend/src/Pages/Index.razor to include AddSubscription component
+- [X] T009 Create SubscriptionsController in backend/src/Controllers/SubscriptionsController.cs with POST endpoint
+- [X] T010 [P] Create SubscriptionService in frontend/src/Services/SubscriptionService.cs for API calls
+- [X] T011 [P] Create AddSubscription component in frontend/src/Components/AddSubscription.razor
+- [X] T012 Update Index page in frontend/src/Pages/Index.razor to include AddSubscription component
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
